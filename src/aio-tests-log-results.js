@@ -2,7 +2,7 @@ const axios = require('axios');
 const aioLogger = require('./aio-tests-logger');
 const FormData = require('form-data');
 const fs = require('fs');
-const apiTimeout = 10000;
+const apiTimeout = 100000;
 
 let aioAPIClient = null;
 
