@@ -183,6 +183,8 @@ const getOrCreateCycle = (aioConfig) => {
                 })
                     .then(function (response) {
                         aioCycleConfig["cycleKeyToReportTo"] = response.data.key;
+                        aioLogger.log("Testingh123");
+                        aioLogger.log("response: " + JSON.stringify(response.data));
                         aioLogger.log("Cycle created successfully : " + aioCycleConfig.cycleKeyToReportTo )
 
                     })
